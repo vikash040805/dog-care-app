@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fffaf5;
+  color: #2d2a26;
+}
+
+/* ---- NAVBAR -----*/
+
+.navbar{
+  height: 80px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fffaf5;
+
+}
+.logo{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.nav-links{
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #4b4742;
+  font-size: 15px;
+  font-weight: 500;
+}
+.nav-links a:hover{
+  color: #e87532;
+}
+
+.nav-buttons{
+  display: flex;
+  gap: 12px;
+}
+.login-btn{
+  border: 1px solid #ddd3c8;
+  background: transparent;
+  color: #333;
+}
+.signup-btn{
+  border: none;
+  background: #e87532;
+  color: white;
+}
+
+/* --- hero ---*/
+
+.hero{
+  min-height: calc(100vh - 80px);
+  padding: 60 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.hero-content{
+  max-width: 650px;
+}
+.hero-tag{
+  display: inline-block;
+  padding: 8px 14px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: #fff0e5;
+  color: #d86628;
+  font-size: 14px;
+  font-weight: 800;
+
+}
+.hero h1{
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 25px;
+}
+.hero h1 span{
+  color: #e87532;
+}
+
+.hero-description{
+  max-width: 560px;
+  color: #6c665f;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.hero-buttons{
+  display: flex;
+  gap: 14px;
+  margin-bottom: 50px;
+}
+
+.primary-btn,
+.secondary-btn {
+
+  padding: 15px 24px;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn{
+  border: none;
+  margin-right: 2%;
+  background: #e87532;
+  color: white;
+}
+
+.secondary-btn{
+  border: 1px solid #ddd3c8;
+  margin-left: 1%;
+  background: white;
+  color: #333;
+}
+
+.primary-btn:hover,.signup-btn:hover{
+  background: #f5eee7;
+}
+
+
+/* ------ hero stats------*/
+
+.hero-stats{
+  display: flex;
+  gap: 45px;
+}
+.hero-stats strong{
+  font-size: 22px;
+}
+.hero-stats p {
+  margin-top: 5px;
+  color: #77716a;
+  font-size: 13px;
+}
+
+/* ------  Hero Image -----*/
+
+.hero-image{
+  width: 430px;
+  height: 500px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.dog-card{
+  width: 360px;
+  height: 430px;
+  border-radius: 40px;
+  background: #f4d5bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px){
+  .nav-links{
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-description{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  .hero-stats{
+    justify-content: center;
+  }
+  .hero-image{
+    width: 100%;
+  }
+}
+@media (max-width: 500px){
+  .navbar {
+    padding: 0 5%;
+  }
+  .signup-btn{
+    display: none;
+  }
+  .hero {
+    padding: 40px 5%;
+  }
+  .hero h1{
+    font-size: 45px;
+  }
+  .hero-description{
+    font-size: 16px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+  .hero-stats{
+    gap: 20px;
+  }
+  .dog-card {
+    width: 280px;
+    height: 340px;
+    font-size: 130px;
+  }
+}
+
+
+
+
