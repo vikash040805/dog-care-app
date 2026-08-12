@@ -15,7 +15,9 @@ function Hero(){
                 </p>
                 <div className="hero-buttongs">
                     <button className="primary-btn">
+                        <a href="/register">
                         Get Started 🐶
+                        </a>
                     </button>
 
                     <button className="secondary-btn">
